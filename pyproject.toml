@@ -1,7 +1,13 @@
 [project]
 name = "auto-google-forms"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "CLI and backend core for authorized Google Forms"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "questionary>=2.1.1",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+forms-tool = "auto_google_forms.cli:main"
